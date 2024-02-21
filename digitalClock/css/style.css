@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #08001F, #30197D);
+    color: #ddd;
+    position: relative;
+}
+
+.hero .hero--container {
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px -5px 28px -7px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px -5px 28px -7px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px -5px 28px -7px rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+
+.hero .hero--container .hero--container__clock {
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero--container .hero--container__clock span {
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    color: #30197D;
+    position: relative;
+}
+
+.hero .hero--container .hero--container__clock span:nth-child(1)::After {
+    content: 'Hours';
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .hero--container .hero--container__clock span:nth-child(3)::After {
+    content: 'Mins';
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .hero--container .hero--container__clock span:nth-child(5)::After {
+    content: 'Sec';
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
